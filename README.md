@@ -1,4 +1,6 @@
-## Welcome to GitHub Pages
+## VICKEY: Mining Conditional Keys on Knowledge Bases
+
+A conditional key is a key constraint that is valid in only a part of the data. VICKEY is a system that can automatically mine conditional keys on large knowledge bases (KBs). For this, VICKEY combines techniques from key mining with techniques from rule mining. VICKEY can scale to knowledge bases of millions of facts. In addition, the conditional keys mined by VICKEY can improve the quality of entity linking by up to 47 percentage points.
 
 You can use the [editor on GitHub](https://github.com/lgalarra/vickey/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
 
