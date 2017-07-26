@@ -1,0 +1,3 @@
+The parallel version of VICKEY is implemented in amie/keys/CSAKey.java.
+The sequential version is in amie/keys/CombinationsExploration.java. 
+The conditional keys miner based on AMIE is implemented in amie/keys/AMIEKeyMiner.java
