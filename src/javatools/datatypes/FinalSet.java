@@ -4,6 +4,7 @@ import java.util.AbstractList;
 import java.util.Arrays;
 import java.util.Set;
 //import java.util.Spliterator; Elvis does not have java8. Could you update elvis?
+import java.util.Spliterator;
 
 import javatools.administrative.D;
 
@@ -80,6 +81,12 @@ public class FinalSet<T extends Comparable<?>> extends AbstractList<T>
 	  
 	}*/
 	
+	@Override
+	public Spliterator<T> spliterator() {
+		// TODO Auto-generated method stub
+		return super.spliterator();
+	}
+
 	/** Test routine */
 	public static void main(String[] args) {
 		FinalSet<String> f = new FinalSet<String>("b", "a", "c");
