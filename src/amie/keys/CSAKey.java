@@ -291,11 +291,11 @@ public class CSAKey {
     		threads[i].join();
     	}
         long timeb = System.currentTimeMillis();
-        System.out.println("Unique C-keys");
+        System.out.println("==== Unique C-keys =====");
         for (Rule r : output) {
         	System.out.println(Utilities.formatKey(r));
         }
-        System.out.println("CSAKey found " + output.size() + " unique conditional keys in " + (timeb - timea) +  " ms");
+        System.out.println("VICKEY found " + output.size() + " unique conditional keys in " + (timeb - timea) +  " ms");
     }
     
     /**

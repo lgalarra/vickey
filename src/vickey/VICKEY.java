@@ -2,7 +2,6 @@ package vickey;
 
 import java.io.ByteArrayOutputStream;
 import java.io.File;
-import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.PrintStream;
 import java.io.PrintWriter;
@@ -17,6 +16,7 @@ public class VICKEY {
 		String[] sakeyArgs = new String[] {args[args.length - 1], "1"};		
 		// We have to capture the standard output into a stream
 		ByteArrayOutputStream baos = new ByteArrayOutputStream();
+		System.out.println("Computing the non-keys");
 		PrintStream ps = new PrintStream(baos);
 	    // IMPORTANT: Save the old System.out!
 	    PrintStream old = System.out;
@@ -54,6 +54,7 @@ public class VICKEY {
 		if (nonKeys.length > 1) {
 			nonKeys[0] = nonKeys[0].replace("[[", "");
 			nonKeys[nonKeys.length - 1] = nonKeys[nonKeys.length - 1].replace("]]", "");
+			System.out.println(nonKeys.length + " non-keys found");
 			File tmpFileObj = File.createTempFile("non-keys-", ".txt");
 			try(PrintWriter writer = new PrintWriter(tmpFileObj)) {
 				for (String nk : nonKeys) {
